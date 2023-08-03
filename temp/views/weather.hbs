@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project medo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    {{>header}}
+
+    <div class="main main-weather">
+        <div class="overlay">
+            <div class="main-content">
+                <div class="left">
+                        <form id="form1">
+                            <h2>please insert your country</h2>
+                            <input id="address" type="text">
+                            <button>search</button>
+                            
+                        </form>
+                    <div id="realtime">
+                                <h2>real time World weather</h2>
+                                <p>
+                                    This is the weather at this moment in <span id="locationM"></span>
+                                </p>
+                            </div>
+                    
+                </div>
+                <div class="right">
+                    <h4><span id="locat"></span> , <span id="cont"></span></h4>
+                        <div class="all-info">
+                            <div class="iconx">
+                                <div class="img">
+                                    <img id="icon" src="" alt="">
+                                </div>
+                            <h3 id="condition"></h3>
+                        </div>
+                        <h2><span id="tempx"></span><span><sup>o</sup></span>C</h2>
+                        <div class="more-info">
+                            <p>
+                                <span>wind : <span id="wind"></span> kmph</span>
+                                <span>precip : <span id="pre"></span> mm</span>
+                                <span>pressure : <span id="press"></span> mb</span>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p id="location"></p>
+    <p id="forecastx"></p>
+    <p id="error"></p>
+    {{>footer}}
+    <script src="js/watherpage.js"></script>
+    <script src="js/all.min.js"></script>
+
+</body>
+</html>
